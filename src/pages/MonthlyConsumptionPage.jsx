@@ -1,18 +1,18 @@
 import React, { useEffect } from 'react';
-import Dashboard from '../components/Dashboard';
+import MonthlyConsumption from '../components/MonthlyConsumption';
 import Navigation from '../components/Navegation';
 
-const PanelDashboardPage = () => {
+const MonthlyConsumptionPage = () => {
 
     useEffect(() => {
         // Cambiar el título de la pestaña
-        document.title = 'Dashboard';
+        document.title = 'Consumo por mes';
     }, []); // Esto se ejecutará cada vez que el título cambie
 
     return <>
-        <Navigation />
-        <Dashboard />
+        <Navigation/>
+        <MonthlyConsumption/>
     </>
 
 }
-export default PanelDashboardPage;
+export default MonthlyConsumptionPage;

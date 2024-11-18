@@ -72,15 +72,15 @@ const SensorData = () => {
           <table className="table table-striped">
             <thead className="thead-dark">
               <tr>
-                <th>ID</th>
-                <th>Corriente RMS</th>
+                <th>#</th>
+                <th>Corriente (A)</th>
                 <th>Fecha y Hora</th>
               </tr>
             </thead>
             <tbody>
-              {currentItems.map((item) => (
+              {currentItems.map((item, index) => (
                 <tr key={item.id}>
-                  <td>{item.id}</td>
+                  <td> {index + 1 + (currentPage - 1) * itemsPerPage} </td>
                   <td>{item.corrienteRMS}</td>
                   <td>{item.fechaHora}</td>
                 </tr>

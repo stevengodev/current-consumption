@@ -37,7 +37,7 @@ const Dashboard = () => {
         labels: sensorData.map(d => d.fechaHora),
         datasets: [
             {
-                label: 'Consumo Energético (RMS)',
+                label: 'Consumo Energético (A)',
                 data: sensorData.map(d => d.corrienteRMS),
                 borderColor: 'rgba(75,192,192,1)',
                 backgroundColor: 'rgba(75,192,192,0.2)',
